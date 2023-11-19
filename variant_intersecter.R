@@ -11,6 +11,7 @@ if (length(cargs)==0 | length(cargs)>2) {
   cat(col_green("Usage: Rscript Variant_Intersecter.R file1 file2\n"))
   cat(col_green("File formats accepted: .vcf, .vcf.gz, .bim\n"))
   cat(col_green("Both files should be of same genomic build\n"))
+  stop()
 }
 
 get_variants <- function(varfile) {
